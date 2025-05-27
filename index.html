@@ -11,13 +11,18 @@
       html {
         scroll-behavior: smooth;
       }
+      .title-underline {
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+      }
     </style>
   </head>
   <body class="bg-white text-gray-800 font-sans">
     <!-- 👇 Navbar -->
     <nav class="sticky top-0 bg-white shadow z-50">
       <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
-        <span class="text-xl font-bold">Mon Portfolio</span>
+        <span class="text-xl font-bold hover:text-blue-500 transition-colors duration-200">Yassine Allaouna</span>
         <!-- Menu mobile -->
         <button id="menuBtn" class="md:hidden">
           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -29,7 +34,6 @@
           <a href="#hero" class="hover:underline">Accueil</a>
           <a href="#about" class="hover:underline">À propos</a>
           <a href="#experience" class="hover:underline">Expérience</a>
-          <a href="#projects" class="hover:underline">Projets</a>
           <a href="#skills" class="hover:underline">Compétences</a>
           <a href="#contact" class="hover:underline">Contact</a>
         </div>
@@ -39,9 +43,9 @@
     <!-- 👇 Hero Section -->
     <section id="hero" class="min-h-screen flex items-center justify-center bg-gray-100">
       <div class="text-center">
-        <img src="assets/images/profile.jpg" alt="Photo de profil" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
-        <h1 class="text-4xl font-bold mb-2">Votre Nom</h1>
-        <p class="text-xl text-gray-600 mb-6">Développeur Full Stack</p>
+        <img src="assets/images/photo.jpg" alt="Photo de profil" class="w-32 h-32 squared-full mx-auto mb-4 object-cover">
+        <h1 class="text-4xl font-bold mb-2">Yassine Allaouna</h1>
+        <p class="text-xl text-gray-600 mb-6">Product Manager</p>
         <div class="space-x-4">
           <a href="assets/cv.pdf" class="bg-blue-500 text-white px-6 py-2 rounded hover:bg-blue-600">Télécharger CV</a>
           <a href="#contact" class="bg-gray-500 text-white px-6 py-2 rounded hover:bg-gray-600">Me contacter</a>
@@ -52,29 +56,75 @@
     <!-- 👇 About Section -->
     <section id="about" class="py-20 bg-white">
       <div class="max-w-4xl mx-auto px-4">
-        <h2 class="text-3xl font-bold mb-8 text-center">À propos</h2>
-        <p class="text-lg text-gray-600">
-          Votre présentation personnelle ici...
-        </p>
+        <h2 class="text-3xl font-bold mb-12 text-center relative">
+          À propos
+          <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 title-underline h-1 bg-blue-500 rounded-full mt-4"></div>
+        </h2>
+        <div class="space-y-6 text-center">
+          <p class="text-lg text-gray-700 leading-relaxed">
+            <span class="text-blue-500 font-semibold">Fort d'une solide expérience</span> dans le secteur du transport et de la logistique, j'ai su développer des compétences concrètes en gestion de projet, coordination opérationnelle et optimisation des flux.
+          </p>
+
+          <p class="text-lg text-gray-700 leading-relaxed">
+            Mon passage dans la <span class="text-blue-500 font-semibold">scale-up WOOP</span> m'a permis d'évoluer dans un environnement agile, innovant et exigeant, où j'ai renforcé ma capacité à piloter des projets complexes avec rigueur et autonomie.
+          </p>
+
+          <p class="text-lg text-gray-700 leading-relaxed">
+            Aujourd'hui, je suis à la recherche d'un nouveau défi stimulant, au croisement de la tech, de l'opérationnel et de la stratégie, où je pourrai mettre à profit mon expérience terrain et ma vision orientée solutions.
+          </p>
+        </div>
       </div>
     </section>
 
     <!-- 👇 Experience Section -->
     <section id="experience" class="py-20 bg-gray-100">
       <div class="max-w-4xl mx-auto px-4">
-        <h2 class="text-3xl font-bold mb-8 text-center">Expérience</h2>
-        <div class="space-y-8">
-          <!-- Ajoutez vos expériences ici -->
-        </div>
-      </div>
-    </section>
+        <h2 class="text-3xl font-bold mb-12 text-center relative">
+          Expérience
+          <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 title-underline h-1 bg-blue-500 rounded-full mt-4"></div>
+        </h2>
+        <div class="space-y-12">
+          <!-- Woop -->
+          <div class="relative pl-8">
+            <div class="absolute left-0 top-2 w-4 h-4 rounded-full bg-blue-500"></div>
+            <div class="border-l-2 border-blue-500 pl-6">
+              <h3 class="text-xl font-bold text-blue-500">Product Owner</h3>
+              <p class="text-gray-600 mb-2">Woop | Mars 2022 - Aujourd'hui</p>
+              <ul class="list-disc list-inside space-y-2 text-gray-700">
+                <li>Responsable de la brique « Shipping » et "Tracking" qui correspondent aux demandes et évolutions de la partie transport d'une livraison</li>
+                <li>Définition de la Roadmap des différents périmètres</li>
+                <li>Méthodologies Agile et Scrum</li>
+                <li>Priorisation des fonctionnalités (ex : MoSCoW, RICE)</li>
+                <li>Analyse de données et prise de décision basée sur les KPIs</li>
+              </ul>
+            </div>
+          </div>
 
-    <!-- 👇 Projects Section -->
-    <section id="projects" class="py-20 bg-white">
-      <div class="max-w-6xl mx-auto px-4">
-        <h2 class="text-3xl font-bold mb-8 text-center">Projets</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <!-- Ajoutez vos projets ici -->
+          <!-- XPO Logistics -->
+          <div class="relative pl-8">
+            <div class="absolute left-0 top-2 w-4 h-4 rounded-full bg-blue-500"></div>
+            <div class="border-l-2 border-blue-500 pl-6">
+              <h3 class="text-xl font-bold text-blue-500">Affreteur International</h3>
+              <p class="text-gray-600 mb-2">XPO Logistics | Mars 2019 - Mars 2021</p>
+              <ul class="list-disc list-inside space-y-2 text-gray-700">
+                <li>Effectuer la coordination, la planification et l'exécution de projets de transport</li>
+                <li>Créer des documents d'application fonctionnels et techniques</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Kreiss SIA -->
+          <div class="relative pl-8">
+            <div class="absolute left-0 top-2 w-4 h-4 rounded-full bg-blue-500"></div>
+            <div class="border-l-2 border-blue-500 pl-6">
+              <h3 class="text-xl font-bold text-blue-500">Sales Manager</h3>
+              <p class="text-gray-600 mb-2">Kreiss SIA | Septembre 2016 - Septembre 2018</p>
+              <ul class="list-disc list-inside space-y-2 text-gray-700">
+                <li>Responsable d'Affaires de Grands Comptes pour un acteur du transport routier basé en Lettonie</li>
+                <li>Portefeuille de 2,3 M€</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -82,9 +132,58 @@
     <!-- 👇 Skills Section -->
     <section id="skills" class="py-20 bg-gray-100">
       <div class="max-w-4xl mx-auto px-4">
-        <h2 class="text-3xl font-bold mb-8 text-center">Compétences</h2>
-        <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-          <!-- Ajoutez vos compétences ici -->
+        <h2 class="text-3xl font-bold mb-12 text-center relative">
+          C O M P É T E N C E S
+          <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 title-underline h-1 bg-blue-500 rounded-full mt-4"></div>
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Product Management -->
+          <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+            <div class="flex flex-col items-center space-y-4">
+              <div class="flex items-center justify-center space-x-4">
+                <img src="assets/images/logos/jira.svg" alt="Jira Logo" class="w-14 h-14 object-contain">
+                <img src="assets/images/logos/trello.svg" alt="Trello Logo" class="w-18 h-18 object-contain">
+              </div>
+              <h3 class="text-xl font-semibold text-blue-500 text-center">Product Management</h3>
+              <p class="text-gray-600 text-center"><strong>JIRA</strong> | <strong>Trello</strong></p>
+            </div>
+          </div>
+
+          <!-- Gestion de projet -->
+          <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+            <div class="flex flex-col items-center space-y-4">
+              <div class="flex items-center justify-center space-x-4">
+                <img src="assets/images/logos/clickup.svg" alt="Clickup Logo" class="w-18 h-18 object-contain">
+                <img src="assets/images/logos/notion.svg" alt="Notion Logo" class="w-12 h-12 object-contain">
+              </div>
+              <h3 class="text-xl font-semibold text-blue-500 text-center">Gestion de projet</h3>
+              <p class="text-gray-600 text-center"><strong>Clickup</strong> | <strong>Notion</strong></p>
+            </div>
+          </div>
+
+          <!-- Méthodologies -->
+          <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+            <div class="flex flex-col items-center space-y-4">
+              <div class="flex items-center justify-center space-x-4">
+                <img src="assets/images/logos/agile.svg" alt="Agile Logo" class="w-12 h-12 object-contain">
+                <img src="assets/images/logos/scrum.svg" alt="Scrum Logo" class="w-12 h-12 object-contain">
+                <img src="assets/images/logos/kanban.svg" alt="Kanban Logo" class="w-12 h-12 object-contain">
+              </div>
+              <h3 class="text-xl font-semibold text-blue-500 text-center">Méthodologies</h3>
+              <p class="text-gray-600 text-center"><strong>AGILE</strong> | <strong>SCRUM</strong> | <strong>Kanban</strong></p>
+            </div>
+          </div>
+
+          <!-- Communication -->
+          <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+            <div class="flex flex-col items-center space-y-4">
+              <div class="flex items-center justify-center">
+                <img src="assets/images/logos/communication.svg" alt="Communication Logo" class="w-12 h-12 object-contain">
+              </div>
+              <h3 class="text-xl font-semibold text-blue-500 text-center">Communication</h3>
+              <p class="text-gray-600 text-center"><strong>Efficace et collaborative</strong></p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -92,19 +191,21 @@
     <!-- 👇 Contact Section -->
     <section id="contact" class="py-20 bg-white">
       <div class="max-w-4xl mx-auto px-4">
-        <h2 class="text-3xl font-bold mb-8 text-center">Contact</h2>
+        <h2 class="text-3xl font-bold mb-12 text-center relative">
+          Contact
+          <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 title-underline h-1 bg-blue-500 rounded-full mt-4"></div>
+        </h2>
         <div class="text-center">
           <p class="mb-4">N'hésitez pas à me contacter :</p>
           <div class="space-x-4">
-            <a href="mailto:votre@email.com" class="text-blue-500 hover:underline">votre@email.com</a>
-            <a href="https://linkedin.com/in/votre-profil" target="_blank" class="text-blue-500 hover:underline">LinkedIn</a>
-            <a href="https://github.com/votre-profil" target="_blank" class="text-blue-500 hover:underline">GitHub</a>
+            <a href="mailto:votre@email.com" class="text-blue-500 hover:underline">yassine.allaouna@gmail.com</a>
+            <a href="https://linkedin.com/in/allaouna" target="_blank" class="text-blue-500 hover:underline">LinkedIn</a>
           </div>
         </div>
       </div>
     </section>
 
-    <footer class="text-center py-10 text-sm text-gray-500">© 2024 Votre Nom</footer>
+    <footer class="text-center py-10 text-sm text-gray-500">© 2025 Yassine Allaouna</footer>
 
     <!-- JS -->
     <script src="main.js"></script>
